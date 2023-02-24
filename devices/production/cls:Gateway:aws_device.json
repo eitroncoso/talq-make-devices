@@ -1,0 +1,108 @@
+{
+    "address": "00000000-0000-0000-0000-000000000000",
+    "class": "cls:Gateway:aws",
+    "functions": [
+        {
+            "id": "GatewayFunction1",
+            "type": "GatewayFunction",
+            "cmsAddress": {
+                "timestamp": "2023-02-15T17:55:02.829001-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "cmsUri": {
+                "timestamp": "2023-02-15T17:55:02.829041-03:00",
+                "type": "AttributeUri",
+                "value": "https://example.com/"
+            },
+            "crlUrn": {
+                "timestamp": "2023-02-15T17:55:02.829055-03:00",
+                "type": "AttributeUri",
+                "value": "https://example.com/"
+            },
+            "currentReleaseId": {
+                "timestamp": "2023-02-15T17:55:02.829066-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "gatewayAddress": {
+                "timestamp": "2023-02-15T17:55:02.829075-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "gatewayUri": {
+                "timestamp": "2023-02-15T17:55:02.829084-03:00",
+                "type": "AttributeUri",
+                "value": "https://example.com/"
+            },
+            "retryPeriod": {
+                "timestamp": "2023-02-15T17:55:02.829092-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "vendor": {
+                "timestamp": "2023-02-15T17:55:02.829101-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "BasicFunction1",
+            "type": "BasicFunction",
+            "currentTime": {
+                "timestamp": "2023-02-15T17:55:02.829139-03:00",
+                "type": "AttributeDateTime",
+                "value": "2022-01-01T16:55:59-03:00"
+            },
+            "deviceReset": {
+                "timestamp": "2023-02-15T17:55:02.829150-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "hwType": {
+                "timestamp": "2023-02-15T17:55:02.829159-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "hwVersion": {
+                "timestamp": "2023-02-15T17:55:02.829167-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "installationDate": {
+                "timestamp": "2023-02-15T17:55:02.829176-03:00",
+                "type": "AttributeDateTime",
+                "value": "2022-01-01T16:55:59-03:00"
+            },
+            "maintenanceMode": {
+                "timestamp": "2023-02-15T17:55:02.829184-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "softwareUpdating": {
+                "timestamp": "2023-02-15T17:55:02.829193-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "swVersion": {
+                "timestamp": "2023-02-15T17:55:02.829202-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "LocationSensorFunction",
+            "type": "LocationSensorFunction",
+            "location": {
+                "timestamp": "2023-02-15T17:55:02.829224-03:00",
+                "type": "AttributeLocation",
+                "value": {
+                    "altitude": 0,
+                    "latitude": 0,
+                    "longitude": 0
+                }
+            }
+        }
+    ],
+    "name": "tls:Gateway"
+}

@@ -1,0 +1,31 @@
+{
+    "functions": [
+        {
+            "functionId": "BasicFunction1",
+            "type": "BasicFunction",
+            "attributes": [
+                {
+                    "description": "Display name of the asset.",
+                    "name": "displayName"
+                },
+                {
+                    "description": "Hardware type of the device.",
+                    "name": "hwType"
+                }
+            ],
+            "events": []
+        },
+        {
+            "functionId": "LocationSensorFunction1",
+            "type": "LocationSensorFunction",
+            "attributes": [
+                {
+                    "description": "Location of the device.",
+                    "name": "location"
+                }
+            ],
+            "events": []
+        }
+    ],
+    "name": "cls:LuminaryView"
+}

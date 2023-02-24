@@ -1,0 +1,13 @@
+{
+    "BasicFunction1": {
+        "attributes": [
+            "displayName",
+            "hwType"
+        ]
+    },
+    "LocationSensorFunction1": {
+        "attributes": [
+            "location"
+        ]
+    }
+}

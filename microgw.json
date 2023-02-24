@@ -1,0 +1,98 @@
+{
+    "BasicFunction1": {
+        "attributes": [
+            "hwType",
+            "hwVersion",
+            "swType",
+            "installationDate",
+            "swVersion",
+            "deviceReset",
+            "softwareUpdating",
+            "currentTime",
+            "reboot",
+            "operatingHours"
+        ]
+    },
+    "CommunicationFunction1": {
+        "attributes": [
+            "communicationFailure",
+            "communicationType",
+            "logicalAddress",
+            "physicalAddress"
+        ],
+        "defaults": {
+            "communicationType": "Cellular"
+        }
+    },
+    "CommunicationFunction2": {
+        "attributes": [
+            "communicationFailure",
+            "communicationType",
+            "logicalAddress",
+            "physicalAddress"
+        ],
+        "defaults": {
+            "communicationType": "MODBUS"
+        }
+    },
+    "LocationSensorFunction1": {
+        "attributes": [
+            "location",
+            "locationChanged",
+            "locationChangedThreshold"
+        ]
+    },
+    "GenericActuatorFunction1": {
+        "attributes": [
+            "actualState",
+            "feedbackCommand",
+            "stateChange",
+            "targetCommand",
+            "targetCommandChange",
+            "calendarID"
+        ]
+    },
+    "PhotocellFunction1": {
+        "attributes": [
+            "offLevel",
+            "onLevel",
+            "photocellOutput"
+        ]
+    },
+    "ElectricalMeterFunction1": {
+        "attributes": [
+            "phase1Voltage",
+            "phase1VoltageHighThreshold",
+            "phase1VoltageLowThreshold",
+            "phase1VoltageTooHigh",
+            "phase1VoltageTooLow",
+            
+            "phase1Current",
+            "phase1CurrentHighThreshold",
+            "phase1CurrentLowThreshold",
+            "phase1CurrentTooHigh",
+            "phase1CurrentTooLow",
+
+            "neutralCurrentHighThreshold",
+            "neutralCurrentTooHigh",
+            "neutralCurrent",
+
+            "phase1PowerFactor",
+            "phase1PowerfactorLowThreshold",
+            "phase1PowerfactorTooLow",
+
+            "totalPower",
+            "totalPowerHighThreshold",
+            "totalPowerLowThreshold",
+            "totalPowerTooHigh",
+            "totalPowerTooLow",
+
+            "totalActiveEnergy"
+        ]
+    },
+    "LightSensorFunction1": {
+        "attributes": [
+            "lightLevel"
+        ]
+    }
+}

@@ -1,0 +1,325 @@
+{
+    "address": "00000000-0000-0000-0000-000000000000",
+    "class": "cls:microgateway",
+    "functions": [
+        {
+            "id": "BasicFunction1",
+            "type": "BasicFunction",
+            "hwType": {
+                "timestamp": "2023-02-15T18:45:45.038627-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "hwVersion": {
+                "timestamp": "2023-02-15T18:45:45.038670-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "swType": {
+                "timestamp": "2023-02-15T18:45:45.038685-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "installationDate": {
+                "timestamp": "2023-02-15T18:45:45.038696-03:00",
+                "type": "AttributeDateTime",
+                "value": "2022-01-01T16:55:59-03:00"
+            },
+            "swVersion": {
+                "timestamp": "2023-02-15T18:45:45.038705-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "deviceReset": {
+                "timestamp": "2023-02-15T18:45:45.038718-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "softwareUpdating": {
+                "timestamp": "2023-02-15T18:45:45.038727-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "currentTime": {
+                "timestamp": "2023-02-15T18:45:45.038736-03:00",
+                "type": "AttributeDateTime",
+                "value": "2022-01-01T16:55:59-03:00"
+            },
+            "reboot": {
+                "timestamp": "2023-02-15T18:45:45.038745-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "operatingHours": {
+                "timestamp": "2023-02-15T18:45:45.038754-03:00",
+                "type": "AttributeInteger",
+                "value": 0
+            }
+        },
+        {
+            "id": "CommunicationFunction1",
+            "type": "CommunicationFunction",
+            "communicationFailure": {
+                "timestamp": "2023-02-15T18:45:45.038784-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "communicationType": {
+                "timestamp": "2023-02-15T18:45:45.038808-03:00",
+                "type": "AttributeString",
+                "value": "Cellular"
+            },
+            "logicalAddress": {
+                "timestamp": "2023-02-15T18:45:45.038831-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "physicalAddress": {
+                "timestamp": "2023-02-15T18:45:45.038854-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "CommunicationFunction2",
+            "type": "CommunicationFunction",
+            "communicationFailure": {
+                "timestamp": "2023-02-15T18:45:45.038890-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "communicationType": {
+                "timestamp": "2023-02-15T18:45:45.038900-03:00",
+                "type": "AttributeString",
+                "value": "MODBUS"
+            },
+            "logicalAddress": {
+                "timestamp": "2023-02-15T18:45:45.038925-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "physicalAddress": {
+                "timestamp": "2023-02-15T18:45:45.038948-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "LocationSensorFunction1",
+            "type": "LocationSensorFunction",
+            "location": {
+                "timestamp": "2023-02-15T18:45:45.038983-03:00",
+                "type": "AttributeLocation",
+                "value": {
+                    "altitude": 0,
+                    "latitude": 0,
+                    "longitude": 0
+                }
+            },
+            "locationChanged": {
+                "timestamp": "2023-02-15T18:45:45.038994-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "locationChangedThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039015-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            }
+        },
+        {
+            "id": "GenericActuatorFunction1",
+            "type": "GenericActuatorFunction",
+            "actualState": {
+                "timestamp": "2023-01-26T11:22:25.588825-03:00",
+                "type": "AttributeState",
+                "value": {
+                    "name": "BooleanState",
+                    "value": true
+                }
+            },
+            "feedbackCommand": {
+                "timestamp": "2023-02-15T18:45:45.039060-03:00",
+                "type": "AttributeCommand",
+                "value": {
+                    "timestamp": "2023-01-26T11:22:25.588825-03:00",
+                    "type": "AttributeState",
+                    "value": {
+                        "name": "BooleanState",
+                        "value": true
+                    }
+                }
+            },
+            "stateChange": {
+                "timestamp": "2023-02-15T18:45:45.039085-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "targetCommand": {
+                "timestamp": "2023-02-15T18:45:45.039094-03:00",
+                "type": "AttributeCommand",
+                "value": {
+                    "timestamp": "2023-01-26T11:22:25.588825-03:00",
+                    "type": "AttributeState",
+                    "value": {
+                        "name": "BooleanState",
+                        "value": true
+                    }
+                }
+            },
+            "targetCommandChange": {
+                "timestamp": "2023-02-15T18:45:45.039103-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "calendarID": {
+                "timestamp": "2023-02-15T18:45:45.039112-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "PhotocellFunction1",
+            "type": "PhotocellFunction",
+            "offLevel": {
+                "timestamp": "2023-02-15T18:45:45.039146-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "onLevel": {
+                "timestamp": "2023-02-15T18:45:45.039157-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "photocellOutput": {
+                "timestamp": "2023-02-15T18:45:45.039180-03:00",
+                "type": "AttributeBinary",
+                "value": "OFF"
+            }
+        },
+        {
+            "id": "ElectricalMeterFunction1",
+            "type": "ElectricalMeterFunction",
+            "phase1Voltage": {
+                "timestamp": "2023-02-15T18:45:45.039216-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1VoltageHighThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039229-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1VoltageLowThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039239-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1VoltageTooHigh": {
+                "timestamp": "2023-02-15T18:45:45.039248-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "phase1VoltageTooLow": {
+                "timestamp": "2023-02-15T18:45:45.039276-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "phase1Current": {
+                "timestamp": "2023-02-15T18:45:45.039286-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1CurrentHighThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039295-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1CurrentLowThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039305-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1CurrentTooHigh": {
+                "timestamp": "2023-02-15T18:45:45.039316-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "phase1CurrentTooLow": {
+                "timestamp": "2023-02-15T18:45:45.039327-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "neutralCurrentHighThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039336-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "neutralCurrentTooHigh": {
+                "timestamp": "2023-02-15T18:45:45.039346-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "neutralCurrent": {
+                "timestamp": "2023-02-15T18:45:45.039357-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1PowerFactor": {
+                "timestamp": "2023-02-15T18:45:45.039367-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1PowerfactorLowThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039378-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "phase1PowerfactorTooLow": {
+                "timestamp": "2023-02-15T18:45:45.039399-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "totalPower": {
+                "timestamp": "2023-02-15T18:45:45.039409-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "totalPowerHighThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039417-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "totalPowerLowThreshold": {
+                "timestamp": "2023-02-15T18:45:45.039426-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            },
+            "totalPowerTooHigh": {
+                "timestamp": "2023-02-15T18:45:45.039435-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "totalPowerTooLow": {
+                "timestamp": "2023-02-15T18:45:45.039445-03:00",
+                "type": "AttributeBoolean",
+                "value": true
+            },
+            "totalActiveEnergy": {
+                "timestamp": "2023-02-15T18:45:45.039456-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            }
+        },
+        {
+            "id": "LightSensorFunction1",
+            "type": "LightSensorFunction",
+            "lightLevel": {
+                "timestamp": "2023-02-15T18:45:45.039517-03:00",
+                "type": "AttributeFloat",
+                "value": 0.0
+            }
+        }
+    ],
+    "name": "tls:microgateway"
+}

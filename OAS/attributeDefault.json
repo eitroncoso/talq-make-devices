@@ -1,0 +1,81 @@
+{
+    "AttributeBinary" : "OFF",
+    "AttributeBoolean": true,
+    "AttributeBooleanState" : "None",
+    "AttributeCommand" : {
+        "cmsRefId": "undefined",
+        "state": {
+            "name": "LevelState",
+            "value": 0
+        }
+    },
+    "AttributeContentsType" : "Electronics",
+    "AttributeDateTime" : "2022-01-01T16:55:59-03:00",
+    "AttributeDesc" : {
+        "name": "None"
+    },
+    "AttributeFactorSense" : "lag",
+    "AttributeFloat" : 0.0,
+    "AttributeFloatKVPArray" : [{
+        "key": 0.0,
+        "value": 0.0
+    }],
+    "AttributeFloatKVPArrayValue" : 0.0,
+    "AttributeFloatState" : 0.0,
+    "AttributeGasName" : "Other",
+    "AttributeInteger" : 0,
+    "AttributeIntegerState" : 0,
+    "AttributeLevelState" : {
+        "name": "LevelState",
+        "value": 100
+    },
+    "AttributeLocalOverride" : "NONE",
+    "AttributeLocation" : {
+        "altitude": 0,
+        "latitude": 0,
+        "longitude": 0
+    },
+    "AttributeOrientation" : {
+        "phi": 0.0,
+        "psi": 0.0,
+        "theta": 0.0
+    },
+    "AttributeParkingSlotDataArray" : [{
+        "id": 0,
+        "status": "Unknown"
+    }],
+    "AttributeParkingSlotOccupancyStatus" : "Unknown",
+    "AttributePercent" : 0,
+    "AttributePositionedTextState" : {
+        "name": "PositionedTextState",
+        "text": "text",
+        "posX": 0,
+        "posY": 0,
+        "color": "white"
+    },
+    "AttributePowerSource" : "Mains",
+    "AttributeRGBState" : {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "AttributeRoadUser" : "Others",
+    "AttributeState" : {
+        "name": "LevelState",
+        "value": 0
+    },
+    "AttributeString" : "string",
+    "AttributeStringArray" : ["string"],
+    "AttributeSupplyType" : "AC",
+    "AttributeTextState" : "TEXT",
+    "AttributeTrafficDirection" : "Both",
+    "AttributeUri" : "https://example.com/",
+    "AttributeVelocity" : {
+        "horizontalVelocity": {
+            "horizontalSpeed": 0,
+            "bearing": 0
+        }
+    },
+    "AttributeWindDirection" : "N",
+    "error" : "error"
+}

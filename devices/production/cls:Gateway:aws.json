@@ -1,0 +1,107 @@
+{
+    "functions": [
+        {
+            "functionId": "GatewayFunction1",
+            "type": "GatewayFunction",
+            "attributes": [
+                {
+                    "description": "A Universally Unique IDentifiers (UUID) which uniquelly identifies the CMS. Any REST request sent by the CMS must include a REST parameter named 'clientAddress' set with this 'cmsAddress' value. The method through which the CMS determines its own TALQ address is not in the scope of TALQ.",
+                    "name": "cmsAddress"
+                },
+                {
+                    "description": "Base URI for TALQ communication that allows the Gateway to access the CMS. Must be an absolute URI. Other URI's for accessing CMS can be relative to this base.",
+                    "name": "cmsUri"
+                },
+                {
+                    "description": "URI where the Gateway can obtain the Certification Revocation List (CRL).",
+                    "name": "crlUrn"
+                },
+                {
+                    "description": "Release ID of currently deployed release. This is used in the data package service.",
+                    "name": "currentReleaseId"
+                },
+                {
+                    "description": "A Universally Unique IDentifiers (UUID) which uniquelly identifies the Gateway. Any REST request sent by the Gateway must include a REST parameter named 'clientAddress' set with this 'gatewayAddress' value. The Gateway address shall be created and assigned by the CMS as the first step of the bootstrap process (refer to section 5.1 of TALQ Specification for more details of the bootstrap process).",
+                    "name": "gatewayAddress"
+                },
+                {
+                    "description": "Base URI for TALQ communication that allows the CMS to access the Gateway. Must be an absolute URI. Other URI's for accessing Gateway can be relative to this base.",
+                    "name": "gatewayUri"
+                },
+                {
+                    "description": "Time duration before the Gateway retransmits a message for which expected response has not been received.",
+                    "name": "retryPeriod"
+                },
+                {
+                    "description": "Vendor identification.",
+                    "name": "vendor"
+                }
+            ],
+            "events": []
+        },
+        {
+            "functionId": "BasicFunction1",
+            "type": "BasicFunction",
+            "attributes": [
+                {
+                    "description": "Current time of the device defined as local time with time zone designator. [DEPRECATED: This attribute has been deprecated and it will be removed in the next MAJOR release. Please use the new TimeFunction.currentTime instead.]",
+                    "name": "currentTime"
+                },
+                {
+                    "description": "The physical device containing the logical device was reset.",
+                    "name": "deviceReset"
+                },
+                {
+                    "description": "Hardware type of the device.",
+                    "name": "hwType"
+                },
+                {
+                    "description": "Hardware revision of the device.",
+                    "name": "hwVersion"
+                },
+                {
+                    "description": "The installation date of Physical Device.",
+                    "name": "installationDate"
+                },
+                {
+                    "description": "Device is undergoing maintenance, where maintenance may include hardware or software related maintenance actions.",
+                    "name": "maintenanceMode"
+                },
+                {
+                    "description": "Indicates software updating is in progress.",
+                    "name": "softwareUpdating"
+                },
+                {
+                    "description": "Software version installed on the device.",
+                    "name": "swVersion"
+                }
+            ],
+            "events": [
+                {
+                    "description": "The physical device containing the logical device was reset.",
+                    "type": "deviceReset"
+                },
+                {
+                    "description": "Device is undergoing maintenance, where maintenance may include hardware or software related maintenance actions.",
+                    "type": "maintenanceMode"
+                },
+                {
+                    "description": "Indicates software updating is in progress.",
+                    "type": "softwareUpdating"
+                }
+            ]
+        },
+        {
+            "functionId": "LocationSensorFunction",
+            "type": "LocationSensorFunction",
+            "attributes": [
+                {
+                    "description": "Location of the device.",
+                    "name": "location"
+                }
+            ],
+            "events": []
+        }
+    ],
+    "name": "cls:Gateway:aws"
+}

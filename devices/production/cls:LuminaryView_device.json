@@ -1,0 +1,34 @@
+{
+    "address": "00000000-0000-0000-0000-000000000000",
+    "class": "cls:LuminaryView",
+    "functions": [
+        {
+            "id": "BasicFunction1",
+            "type": "BasicFunction",
+            "displayName": {
+                "timestamp": "2023-02-24T17:08:04.343045-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            },
+            "hwType": {
+                "timestamp": "2023-02-24T17:08:04.343086-03:00",
+                "type": "AttributeString",
+                "value": "string"
+            }
+        },
+        {
+            "id": "LocationSensorFunction1",
+            "type": "LocationSensorFunction",
+            "location": {
+                "timestamp": "2023-02-24T17:08:04.343134-03:00",
+                "type": "AttributeLocation",
+                "value": {
+                    "altitude": 0,
+                    "latitude": 0,
+                    "longitude": 0
+                }
+            }
+        }
+    ],
+    "name": "tls:LuminaryView"
+}

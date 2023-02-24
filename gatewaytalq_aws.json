@@ -1,0 +1,36 @@
+{
+    "GatewayFunction1": {
+        "attributes": [
+            "cmsAddress",
+            "cmsUri",
+            "crlUrn",
+            "currentReleaseId",
+            "gatewayAddress",
+            "gatewayUri",
+            "retryPeriod",
+            "vendor"
+        ],
+        "defaults": {
+            
+        }
+    },
+    "BasicFunction1": {
+        "attributes": [
+            "currentTime",
+            "deviceReset",
+            "hwType",
+            "hwVersion",
+            "installationDate",
+            "maintenanceMode",
+            "softwareUpdating",
+            "swVersion"
+        ],
+        "defaults": {}
+    },
+    "LocationSensorFunction": {
+        "attributes": [
+            "location"
+        ],
+        "defaults": {}
+    }
+}
