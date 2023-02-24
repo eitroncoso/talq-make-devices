@@ -1,0 +1,339 @@
+{
+    "functions": [
+        {
+            "functionId": "BasicFunction1",
+            "type": "BasicFunction",
+            "attributes": [
+                {
+                    "description": "Hardware type of the device.",
+                    "name": "hwType"
+                },
+                {
+                    "description": "Hardware revision of the device.",
+                    "name": "hwVersion"
+                },
+                {
+                    "description": "Software type of device. This attribute may be useful if the same hardware supports multiple firmware versions with different functions.",
+                    "name": "swType"
+                },
+                {
+                    "description": "The installation date of Physical Device.",
+                    "name": "installationDate"
+                },
+                {
+                    "description": "Software version installed on the device.",
+                    "name": "swVersion"
+                },
+                {
+                    "description": "The physical device containing the logical device was reset.",
+                    "name": "deviceReset"
+                },
+                {
+                    "description": "Indicates software updating is in progress.",
+                    "name": "softwareUpdating"
+                },
+                {
+                    "description": "Current time of the device defined as local time with time zone designator. [DEPRECATED: This attribute has been deprecated and it will be removed in the next MAJOR release. Please use the new TimeFunction.currentTime instead.]",
+                    "name": "currentTime"
+                },
+                {
+                    "description": "Reboot the device. This operational attribute requires the commandConfirmation attribute value to be set to true.",
+                    "name": "reboot"
+                },
+                {
+                    "description": "Number of operating hours of the device.",
+                    "name": "operatingHours"
+                }
+            ],
+            "events": [
+                {
+                    "description": "The physical device containing the logical device was reset.",
+                    "type": "deviceReset"
+                },
+                {
+                    "description": "Indicates software updating is in progress.",
+                    "type": "softwareUpdating"
+                }
+            ]
+        },
+        {
+            "functionId": "CommunicationFunction1",
+            "type": "CommunicationFunction",
+            "attributes": [
+                {
+                    "description": "This attribute is updated by the ODN when the communication function is not operating as expected.",
+                    "name": "communicationFailure"
+                },
+                {
+                    "description": "Type of communication technology implemented by the ODN (e.g. power line, wireless).",
+                    "name": "communicationType"
+                },
+                {
+                    "description": "Logical address for communication within the ODN scope (IP address, Short Address, ...).",
+                    "name": "logicalAddress"
+                },
+                {
+                    "description": "Physical address of the device. For example, IEEE MAC address. This attribute can be used to map between logical and physical devices. The format is specific to the ODN implementation.",
+                    "name": "physicalAddress"
+                }
+            ],
+            "events": [
+                {
+                    "description": "This attribute is updated by the ODN when the communication function is not operating as expected.",
+                    "type": "communicationFailure"
+                }
+            ]
+        },
+        {
+            "functionId": "CommunicationFunction2",
+            "type": "CommunicationFunction",
+            "attributes": [
+                {
+                    "description": "This attribute is updated by the ODN when the communication function is not operating as expected.",
+                    "name": "communicationFailure"
+                },
+                {
+                    "description": "Type of communication technology implemented by the ODN (e.g. power line, wireless).",
+                    "name": "communicationType"
+                },
+                {
+                    "description": "Logical address for communication within the ODN scope (IP address, Short Address, ...).",
+                    "name": "logicalAddress"
+                },
+                {
+                    "description": "Physical address of the device. For example, IEEE MAC address. This attribute can be used to map between logical and physical devices. The format is specific to the ODN implementation.",
+                    "name": "physicalAddress"
+                }
+            ],
+            "events": [
+                {
+                    "description": "This attribute is updated by the ODN when the communication function is not operating as expected.",
+                    "type": "communicationFailure"
+                }
+            ]
+        },
+        {
+            "functionId": "LocationSensorFunction1",
+            "type": "LocationSensorFunction",
+            "attributes": [
+                {
+                    "description": "Location of the device.",
+                    "name": "location"
+                },
+                {
+                    "description": "Triggered when the difference between location and expectedLocation is above locationChangedThreshold.",
+                    "name": "locationChanged"
+                },
+                {
+                    "description": "Distance (meters)",
+                    "name": "locationChangedThreshold"
+                }
+            ],
+            "events": [
+                {
+                    "description": "Triggered when the difference between location and expectedLocation is above locationChangedThreshold.",
+                    "type": "locationChanged"
+                }
+            ]
+        },
+        {
+            "functionId": "GenericActuatorFunction1",
+            "type": "GenericActuatorFunction",
+            "attributes": [
+                {
+                    "description": "This attribute should reflect the physical state of the source as much as possible. It may be calculated or measured, depending on the specific ODN implementation, which is outside the scope of this specification.",
+                    "name": "actualState"
+                },
+                {
+                    "description": "This attribute reflects the command in effect and it might deviate from the actualState due to propagation time, due to scheduler specific or due to internal ODN specific mechanisms to handle the priority of the requests or response time.",
+                    "name": "feedbackCommand"
+                },
+                {
+                    "description": "This attribute reflects that the state has changed",
+                    "name": "stateChange"
+                },
+                {
+                    "description": "Latest command for the generic actuator.",
+                    "name": "targetCommand"
+                },
+                {
+                    "description": "This attribute reflects that the targetCommand has changed.",
+                    "name": "targetCommandChange"
+                },
+                {
+                    "description": "TALQ Address of the calendar controlling this generic actuator. If this attribute is empty, the behavior shall be determined by the ODN. If the attribute is invalid, the ODN shall trigger a generic invalid address event and the behavior shall be determined by the ODN.",
+                    "name": "calendarID"
+                }
+            ],
+            "events": [
+                {
+                    "description": "This attribute reflects that the state has changed",
+                    "type": "stateChange"
+                },
+                {
+                    "description": "This attribute reflects that the targetCommand has changed.",
+                    "type": "targetCommandChange"
+                }
+            ]
+        },
+        {
+            "functionId": "PhotocellFunction1",
+            "type": "PhotocellFunction",
+            "attributes": [
+                {
+                    "description": "Illuminance level at which the photocell switches to off state.",
+                    "name": "offLevel"
+                },
+                {
+                    "description": "Illuminance level at which the photocell switches to on state.",
+                    "name": "onLevel"
+                },
+                {
+                    "description": "Output state of the photocell. Possible values are ON (means the illuminance level has fallen below the onLevel) and OFF (means the illuminance level has risen above the offLevel).",
+                    "name": "photocellOutput"
+                }
+            ],
+            "events": []
+        },
+        {
+            "functionId": "ElectricalMeterFunction1",
+            "type": "ElectricalMeterFunction",
+            "attributes": [
+                {
+                    "description": "RMS Voltage between phase 1 and neutral.",
+                    "name": "phase1Voltage"
+                },
+                {
+                    "description": "RMS voltage above which the phase1VoltageTooHigh event is triggered.",
+                    "name": "phase1VoltageHighThreshold"
+                },
+                {
+                    "description": "RMS voltage below which the phase1VoltageTooLow event is triggered.",
+                    "name": "phase1VoltageLowThreshold"
+                },
+                {
+                    "description": "Indicates phase 1 supply voltage is above the phase1SupplyVoltageHighThreshold.",
+                    "name": "phase1VoltageTooHigh"
+                },
+                {
+                    "description": "Indicates phase 1 supply voltage is below the phase1SupplyVoltageLowThreshold.",
+                    "name": "phase1VoltageTooLow"
+                },
+                {
+                    "description": "RMS current on phase 1.",
+                    "name": "phase1Current"
+                },
+                {
+                    "description": "RMS current above which the phase1CurrentTooHigh event is triggered.",
+                    "name": "phase1CurrentHighThreshold"
+                },
+                {
+                    "description": "RMS current below which the phase1CurrentTooLow event is triggered.",
+                    "name": "phase1CurrentLowThreshold"
+                },
+                {
+                    "description": "Indicates the phase 1 current is above the phase1CurrentHighThreshold.",
+                    "name": "phase1CurrentTooHigh"
+                },
+                {
+                    "description": "Indicates the phase 1 current is below the phase1CurrentLowThreshold.",
+                    "name": "phase1CurrentTooLow"
+                },
+                {
+                    "description": "RMS current above which the neutralCurrentTooHigh event is triggered.",
+                    "name": "neutralCurrentHighThreshold"
+                },
+                {
+                    "description": "Indicates the neutral current is above the neutralCurrentHighThreshold.",
+                    "name": "neutralCurrentTooHigh"
+                },
+                {
+                    "description": "RMS current on neutral.",
+                    "name": "neutralCurrent"
+                },
+                {
+                    "description": "Power factor on phase 1.",
+                    "name": "phase1PowerFactor"
+                },
+                {
+                    "description": "Phase 1 power factor below which the phase1PowerfactorTooLow event is triggered.",
+                    "name": "phase1PowerfactorLowThreshold"
+                },
+                {
+                    "description": "Indicates the phase 1 power factor is below the phase1PowerfactorLowThreshold.",
+                    "name": "phase1PowerfactorTooLow"
+                },
+                {
+                    "description": "Sum of the active power consumed on phase 1, 2 and 3, or just the power for a single phase meter.",
+                    "name": "totalPower"
+                },
+                {
+                    "description": "Power above which the  totalPowerTooHigh event is triggered.",
+                    "name": "totalPowerHighThreshold"
+                },
+                {
+                    "description": "Power below which the  totalPowerTooLow event is triggered.",
+                    "name": "totalPowerLowThreshold"
+                },
+                {
+                    "description": "Indicates total power is above the totalPowerHighThreshold.",
+                    "name": "totalPowerTooHigh"
+                },
+                {
+                    "description": "Indicates total power is below the totalPowerLowThreshold.",
+                    "name": "totalPowerTooLow"
+                },
+                {
+                    "description": "Total cumulative kWh measured by the meter since installation date (or counter reset).",
+                    "name": "totalActiveEnergy"
+                }
+            ],
+            "events": [
+                {
+                    "description": "Indicates phase 1 supply voltage is above the phase1SupplyVoltageHighThreshold.",
+                    "type": "phase1VoltageTooHigh"
+                },
+                {
+                    "description": "Indicates phase 1 supply voltage is below the phase1SupplyVoltageLowThreshold.",
+                    "type": "phase1VoltageTooLow"
+                },
+                {
+                    "description": "Indicates the phase 1 current is above the phase1CurrentHighThreshold.",
+                    "type": "phase1CurrentTooHigh"
+                },
+                {
+                    "description": "Indicates the phase 1 current is below the phase1CurrentLowThreshold.",
+                    "type": "phase1CurrentTooLow"
+                },
+                {
+                    "description": "Indicates the neutral current is above the neutralCurrentHighThreshold.",
+                    "type": "neutralCurrentTooHigh"
+                },
+                {
+                    "description": "Indicates the phase 1 power factor is below the phase1PowerfactorLowThreshold.",
+                    "type": "phase1PowerfactorTooLow"
+                },
+                {
+                    "description": "Indicates total power is above the totalPowerHighThreshold.",
+                    "type": "totalPowerTooHigh"
+                },
+                {
+                    "description": "Indicates total power is below the totalPowerLowThreshold.",
+                    "type": "totalPowerTooLow"
+                }
+            ]
+        },
+        {
+            "functionId": "LightSensorFunction1",
+            "type": "LightSensorFunction",
+            "attributes": [
+                {
+                    "description": "Illuminance level.",
+                    "name": "lightLevel"
+                }
+            ],
+            "events": []
+        }
+    ],
+    "name": "cls:microgateway"
+}
